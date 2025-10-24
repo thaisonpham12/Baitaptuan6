@@ -1,0 +1,64 @@
+body { font-family: sans-serif; line-height: 1.6; }
+header {
+    background-color: black;
+    color: white;
+    nav ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li{ margin-right: 20px; }
+}
+#product-list { 
+display: flex; 
+flex-wrap: wrap; 
+gap: 20px; /* khoảng cách giữa các sản phẩm */ 
+} 
+.product-item { 
+flex: 1 1 30%; /* mỗi sản phẩm chiếm ~30% chiều ngang, co giãn linh 
+hoạt */ 
+border: 1px solid #ccc; 
+padding: 10px; 
+border-radius: 4px; 
+background: #fafafa; 
+} 
+#product-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#product-price {
+    color: red;
+}
+form { max-width: 400px; 
+margin: 20px auto; }
+input {
+    padding: 10px 12px;
+    margin-bottom: 15px;
+}
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    font-size: 0.7rem;
+    color: gray;
+    padding: 10px 0;
+    background-color: black;
+}
+@media (max-width: 600px) { 
+#product-list { 
+flex-direction: column; 
+} 
+.product-item { 
+flex: 1 1 100%; 
+} 
+nav ul { 
+flex-direction: column; /* menu dọc trên mobile */ 
+} 
+nav ul li { 
+margin: 5px 0; /* khoảng cách các mục menu dọc */ 
+} 
+} 
