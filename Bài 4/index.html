@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Cửa hàng Sách ABC
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header id="trangchu">
+        <h1>Cửa hàng Sách ABC</h1>
+        <nav>
+            <ul>
+            <li><a href="#trangchu">Trang chủ</a></li>
+            <li><a href="#product-list">Sản phẩm</a></li>
+            <li><a href="#lienhe">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            Sách ABC là điểm đến lý tưởng cho những người yêu sách. Chúng tôi cung cấp đa dạng các thể loại từ văn học, kinh tế, khoa học, đến sách thiếu nhi và kỹ năng sống.
+        </section>
+        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+        <button id="searchBtn">Tìm</button> 
+        <button id="addProductBtn">Thêm sản phẩm</button>
+        <form id="addProductForm" class="hidden"> 
+            <h3>Thêm sản phẩm mới</h3> 
+            <label for="newName">Tên sản phẩm:</label> 
+            <input type="text" id="newName" required> <br>
+            <label for="newPrice">Giá:</label> 
+            <input type="number" step="any" id="newPrice" required> <br>
+            <label for="newDesc">Mô tả:</label> 
+            <textarea id="newDesc" rows="3"></textarea> <br>
+            <button type="submit">Thêm</button> 
+            <button type="button" id="cancelBtn">Hủy</button> 
+            <p id="errorMsg" style="color:red;"></p> <!-- Thông báo lỗi --> 
+        </form> 
+ 
+        <section id="product-list">
+            <article class="product-item">
+                <img src="https://images.nxbbachkhoa.vn/Picture/2025/9/9/image-20250909172145861.jpg" width="200"/>
+                <h3 class="product-name">Bài giảng Giải tích I</h3>
+                <p class="product-description">Cuốn bài giảng được biên soạn với mục đích làm tài liệu học tập môn Giải tích I cho sinh viên Trường Đại học Bách khoa Hà Nội, cũng như là tài liệu tham khảo cho sinh viên các trường đại học, cao đẳng khác.</p>
+                <span class="product-price">22400</span>
+            </article>
+            <article class="product-item">
+                <img src="https://images.nxbbachkhoa.vn/Picture/2023/3/20/image-20230320163952673.jpg" width="200"/>
+                <h3 class="product-name">Giải tích II</h3>
+                <p class="product-description">Cuốn sách Giải tích II chủ yếu dành cho phép tính tích phân đối với hàm số nhiều biến số, với nhiều ứng dụng khác nhau trong các bài toán đo đạc, như tính độ dài, diện tích, thể tích, khối lượng, công của lực, v.v..</p>
+                <span class="product-price">22400</span>
+            </article>
+            <article class="product-item">
+                <img src="https://images.nxbbachkhoa.vn/Picture/2022/6/1/image-20220601151312549.jpg" width="200"/>
+                <h3 class="product-name">Giải tích III</h3>
+                <p class="product-description">Cuốn sách này dành cho sinh viên các ngành kỹ thuật và những bạn đọc cần đến kiến thức về phương trình vi phân và chuỗi vô hạn để áp dụng trong các chuyên ngành của mình. Cuốn sách bao gồm kỹ thuật giải và ứng dụng của phương trình vi phân và chuỗi vô hạn.</p>
+                <span class="product-price">22400</span>
+            </article>
+        </section>
+        
+    </main>
+    <form>
+        <label for="name">Tên:</label> <input type="text" required> <br>
+        <label for="email">Email:</label> <input type="email" required> <br>
+        <label for="content">Nội dung: </label> <textarea required></textarea> <br>
+        <button type="submit">Gửi</button>
+    </form>
+    <footer id="lienhe">
+        <h2>Cửa hàng Sách ABC</h2>
+        <p>Số 1, Đại Cồ Việt, Phường Bạch Mai, Thành phố Hà Nội</p>
+        <p>Copyright © 2025</p>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
